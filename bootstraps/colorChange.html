@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Colored bullet point example</title>
+	<style>
+  		ul {
+  list-style-type: none;
+}
+
+ul li::before {
+  content: "• ";
+  color: blue;
+  margin-right: 5px;
+}
+	</style>
+</head>
+<body>
+	<ul>
+		<li>Coffee</li>
+		<li>Tea</li>
+		<li>Milk</li>
+	</ul>
+</body>
+</html>
