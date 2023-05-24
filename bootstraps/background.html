@@ -1,0 +1,331 @@
+<!-- finialised -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400');
+/* body{
+  background-image: url("");
+
+} */
+        /* .container1 {
+  width:100%;
+  height:100%;
+  margin:8px;
+  text-align:center;
+  /* padding-top:37vh; */
+  /* color:black; */
+  /* font-family:'Roboto';
+  font-size:120px;
+  font-weight:100;
+  overflow:hidden;
+  background-image: url("4367.jpg");
+  background-size: 100% 100%;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5); Adjust the last value for the overlay color and opacity */
+  /* opacity: 0.2; Adjust the values as needed */
+
+  /* background-image:url("4367.jpg"); */
+  /* display: inline; */
+  /* position: relative;  */
+  /* right: 330px; */
+  /* bottom: -270px; */
+  /* animation: gradientAnimation 5s; */
+  /* } */
+   
+ 
+
+  /* animation:bg 5s linear infinite; */
+
+
+/* .container{} */
+
+/* .dropping-texts {
+  /* display: inline-block;
+  /* width: 180px; */
+  /* text-align: center;
+  /* height: 36px; */
+  /* vertical-align: -2px;
+  position: relative; 
+   right:250px;
+  top:290px;  */ */ */
+  /* opacity: ; */
+  /* background-image: src("4367.jpg"); */
+  /* background: #7421FF; */
+  /* overflow: hidden; */
+/* } */
+
+/* .dropping-texts > label {
+  font-size:80px;
+  opacity:0;
+  margin-left:-30px;
+  position:absolute;
+  font-weight:300;    */
+  /* box-shadow: 0px 60px 25px -20px rgba(0,0,0,0.5); */
+
+
+/* } */ */ */
+.container1 {
+  width: 100%;
+  height: 100%;
+  margin: 8px;
+  text-align: center;
+  font-family: 'Roboto';
+  /* font-size: 220px; */
+  /* font-weight: 100; */
+  overflow: hidden;
+  position: relative;
+}
+
+.container1::before {
+  content: "";
+  /* font-size: 220px; */
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("4367.jpg");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value for the overlay color and opacity */
+  opacity: 0.2; /* Adjust the value to decrease the background image opacity */
+  z-index: -1;
+}
+
+.dropping-texts {
+  text-align: center;
+  position: relative;
+  right: 250px;
+  top: 290px;
+  font-size: 180px;
+  font-weight: 100;
+
+
+}
+
+.dropping-texts > label {
+  font-size: 80px;
+  opacity: 0;
+  margin-left: -30px;
+  position: absolute;
+  font-weight: 300;
+  /* font-size: 220px; */
+
+}
+
+/* Rest of the CSS code remains the same */
+
+.dropping-texts > label:nth-child(1) {
+  animation: roll 5s linear   0s;
+  font-size: 200px;
+}
+.dropping-texts > label:nth-child(2) {
+  animation: roll 5s linear  1s;
+  font-size: 200px;
+}
+.dropping-texts > label:nth-child(3) {
+  animation: roll 5s linear  2s;
+  font-size: 200px;
+}
+.dropping-texts > label:nth-child(4) {
+  animation: roll 5s linear   3s;
+  font-size: 100px;
+}
+.dropping-texts > label:nth-child(5) {
+  animation: roll 5s linear    4s;
+  font-size: 200px;
+}
+
+.dropping-texts > label:nth-child(6){
+  animation: roll-image 5s linear  6s;
+  /* font-size: 200px; */
+  /* padding-left: -37%; */
+}
+ 
+
+
+@keyframes roll {
+  0% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(-25deg);
+  
+  }
+  3% {
+    opacity:1;
+    transform: rotate(0deg);
+  }
+  5% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+  }
+  20% {
+    font-size:inherit;
+    opacity:0;
+    margin-left:0px;
+    margin-top:0px;
+    transform: rotate(0deg);
+  }
+  27% {
+    font-size:0px;
+    opacity:0.5;
+    margin-left:20px;
+    margin-top:100px;
+  }
+  100% {
+    font-size:0px;
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    transform: rotate(15deg);
+  }
+}
+@keyframes roll-image {
+    0% {
+      transform: rotate(0deg) scale(0);
+      opacity: 0;
+    /* margin-left:-30px;
+    margin-top:0px; */
+    }
+    3% {
+      opacity: 1;
+      transform: rotate(0deg) scale(1);
+    }
+    5% {
+      opacity: 1;
+      transform: rotate(0deg) scale(1);
+    }
+    20% {
+      opacity: 0;
+      transform: rotate(0deg) scale(1);
+    }
+    27% {
+      opacity: 0;
+      transform: rotate(0deg) scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: rotate(15deg) scale(1);
+    }
+  }
+@keyframes roll2 {
+  0% {
+    font-size:0px;
+    opacity:0;
+    /* margin-left:-30px;
+    margin-top:0px; */
+    transform: rotate(-25deg);
+  }
+  3% {
+    opacity:1;
+    transform: rotate(0deg);
+  }
+  5% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+  }
+  30% {
+    font-size:inherit;
+    opacity:1;
+    margin-left:0px;
+    margin-top:0px;
+    transform: rotate(0deg);
+  }
+  37% {
+    /* font-size:1200px; */
+    opacity:0;
+    margin-left:-1000px;
+    margin-top:-800px;
+  }
+  100% {
+    /* font-size:0px; */
+    opacity:0;
+    margin-left:-30px;
+    margin-top:0px;
+    /* transform: rotate(15deg); */
+  }
+}
+@keyframes gradientAnimation {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+.container1 .dropping-texts img{
+  width: 63%;
+  height: 63%;
+  
+  float: left; /* or "right" to align it to the right */
+  margin: 0 130px 57px 0; /* optional margin for spacing */
+
+
+}
+.container1 image{
+  width: 100%;
+  height:100%;
+}
+
+
+/* @keyframes bg {
+  0% {background: #ff0075;}
+  3% {background: #0094ff;}
+  20% {background: #0094ff;}
+  23% {background: #b200ff;}
+  40% {background: #b200ff;}
+  43% {background: #8BC34A;}
+  60% {background: #8BC34A;}
+  63% {background: #F44336;}
+  80% {background: #F44336;}
+  83% {background: #F44336;}
+  100% {background: #F44336;}
+} */
+/* .img{
+max-width: 300px;
+            max-height: 300px;
+} */
+label {
+ 
+  background: linear-gradient(180deg,#7421FF 0%,#E460F3 51.39%,#FAAC97 100%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0);
+ 
+}
+    </style>
+</head>
+<body>
+  <div class="container1">
+    <div class="dropping-texts">
+      
+        <label>HR's</label>
+        <label>Designers</label>
+        <label>coders</label> 
+        
+        <label>For everyone</label> 
+        <label>One spot</label>
+        <!-- <label>Hire spot</label> -->
+
+
+        <label ><img src="Hirespot logo.png" alt="logo"></label>
+         <!-- <label>H i r e s p o t</label> -->
+
+        
+        </div>
+      </div>
+</body>
+</html>

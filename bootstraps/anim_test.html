@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal Preloader</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        
+        .preloader {
+            text-align: center;
+            position: relative;
+            width: 400px;
+            height: 400px;
+        }
+        
+        .preloader-text {
+            font-family: Arial, sans-serif;
+            font-size: 48px;
+            font-weight: bold;
+            text-transform: uppercase;
+            background: -webkit-linear-gradient(#F90202, #FF8C00, #FFEB00, #00FF00, #007CFF, #B100FF);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: textAnimation 2s linear infinite, backgroundAnimation 5s linear infinite;
+            position: relative;
+            z-index: 2;
+        }
+        
+        @keyframes textAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 0%; }
+            100% { background-position: 100% 0%; }
+        }
+
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url("jobs-companies-background.jpg");
+            background-repeat: repeat;
+            animation: backgroundAnimation 10s linear infinite;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="preloader">
+        <div class="background-image"></div>
+        <h1 class="preloader-text">Loading...</h1>
+    </div>
+</body>
+</html>

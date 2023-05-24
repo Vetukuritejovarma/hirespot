@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    body{
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      padding-top: 50px;
+      /* background-color: rgb(253, 248, 248); */
+    }
+   #a #b{
+    padding-top: 50px;
+    margin-top: 0;
+    height: 280px;
+    width: 300px;
+    border-radius: 100%;
+    background-color: rgb(67, 138, 138);
+    border-bottom-right-radius: 200px;
+    float: left;
+    position: relative;
+    animation-name: resize;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: rotateee;
+    transform-origin: top left;
+   }
+   #a #d{
+    padding-top: 50px;
+    margin-top: 0;
+    height: 280px;
+    width: 300px;
+    border-radius: 100%;
+    background-color: rgb(179, 224, 119);
+    border-bottom-right-radius: 200px;
+    position: relative;
+    animation-name: resize;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: rotate;
+    animation-duration: 2s;
+    transform-origin: top left;
+   }
+   #a #b #c{
+    padding-top: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(84, 182, 92);
+    position: relative;
+    animation-name: resize ;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   }
+   #a #d #e{
+    padding-top: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(24, 12, 199);
+    position: relative;
+    animation-name: resize ;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   }
+   #a #f #g{
+    padding-top: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(199, 12, 43);
+    position: relative;
+    animation-name: resize ;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   }
+   #a #blue{
+    padding-top: 50px;
+    margin-top: 0;
+    height: 280px;
+    width: 300px;
+    border-radius: 100%;
+    background-color: rgb(7, 110, 110);
+    border-bottom-right-radius: 200px;
+    float: right;
+    position: relative;
+    animation-name: resize;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: rotate;
+    transform-origin: top left;
+   }
+   @keyframes resize {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+   #a #f{
+    padding-top: 50px;
+    margin-top: 0;
+    height: 280px;
+    width: 300px;
+    border-radius: 100%;
+    background-color: rgb(226, 13, 226);
+    border-bottom-right-radius: 200px;
+    float: right;
+    position: relative;
+    animation-name: resize;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: rotatee;
+    transform-origin: top left;
+   }
+  @keyframes rotate 
+  {
+      from {
+            transform: rotate(0deg);
+           }
+      to {
+            transform: rotate(10deg);
+         }
+    }
+    @keyframes rotatee 
+    {
+      from {
+            transform: rotate(0deg);
+           }
+      to {
+            transform: rotate(-30deg);
+         }
+    }
+    @keyframes rotateee  
+    {
+      from {
+            transform: rotate(0deg);
+           }
+      to {
+            transform: rotate(-60deg);
+         }
+    }
+   #a #blue #yello{
+    padding-top: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(61, 56, 57);
+    position: relative;
+    animation-name: resize;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   }
+   #a #b{
+    padding-top: 50px;
+    margin-top: 0;
+    height: 280px;
+    width: 300px;
+    border-radius: 100%;
+    background-color: rgb(67, 138, 138);
+    border-bottom-right-radius: 200px;
+    float: left;
+    position: relative;
+    animation-name: resize;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: rotateee;
+    transform-origin: top left;
+   }
+   #a #d{
+    padding-top: 50px;
+    margin-top: 0;
+    height: 280px;
+    width: 300px;
+    border-radius: 100%;
+    background-color: rgb(179, 224, 119);
+    border-bottom-right-radius: 200px;
+    position: relative;
+    animation-name: resize;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: rotate;
+    animation-duration: 2s;
+    transform-origin: top left;
+   }
+   #a #b #c{
+    padding-top: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(84, 182, 92);
+    position: relative;
+    animation-name: resize ;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   }
+   #a #d #e{
+    padding-top: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(24, 12, 199);
+    position: relative;
+    animation-name: resize ;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   }
+   #a #f #g{
+    padding-top: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(199, 12, 43);
+    position: relative;
+    animation-name: resize ;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   }
+   #a #blue{
+    padding-top: 50px;
+    margin-top: 0;
+    height: 280px;
+    width: 300px;
+    border-radius: 100%;
+    background-color: rgb(7, 110, 110);
+    border-bottom-right-radius: 200px;
+    float: right;
+    position: relative;
+    animation-name: resize;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: rotate;
+    transform-origin: top left;
+   }
+   @keyframes resize {
+  0% {
+    transform: scale(0.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+   #a #f{
+    padding-top: 50px;
+    margin-top: 0;
+    height: 280px;
+    width: 300px;
+    border-radius: 100%;
+    background-color: rgb(226, 13, 226);
+    border-bottom-right-radius: 200px;
+    float: right;
+    position: relative;
+    animation-name: resize;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-name: rotatee;
+    transform-origin: top left;
+   }
+  @keyframes rotate 
+  {
+      from {
+            transform: rotate(0deg);
+           }
+      to {
+            transform: rotate(10deg);
+         }
+    }
+    @keyframes rotatee 
+    {
+      from {
+            transform: rotate(0deg);
+           }
+      to {
+            transform: rotate(-30deg);
+         }
+    }
+    @keyframes rotateee  
+    {
+      from {
+            transform: rotate(0deg);
+           }
+      to {
+            transform: rotate(-60deg);
+         }
+    }
+   #a #blue #yello{
+    padding-top: 20px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: rgb(61, 56, 57);
+    position: relative;
+    animation-name: resize;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   }
+   #a img {
+            max-width: 300px;
+            max-height: 300px;
+            animation: linear 2s linear forwards;
+            animation-duration: 4s;
+            position: relative;
+            top: 20px;
+            animation-name: example;
+        }
+
+        @keyframes example {
+            0% {
+                animation-timing-function: ease-in-out;
+                top: -230px;
+            }
+
+            100% {
+                top: 30px;
+                animation-timing-function: ease-out;
+                opacity: 0.8;
+            }
+        }
+
+  </style>
+  <title>Document</title>
+</head>
+<body>
+<div id="a">
+    
+        <center><img src="logo.jpg" alt="logo_second"></center>
+    
+
+    <div  id="b">
+      <div id="c">
+      </div>
+    </div>
+    <div id="blue">
+        <div id="yello">
+        </div>
+    </div>
+    <div  id="d">
+        <div id="e">
+        </div>
+    </div>
+    <div  id="f">
+        <div id="g">
+        </div>
+    </div>
+</div>
+</body>
+</html>
